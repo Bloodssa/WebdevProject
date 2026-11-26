@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendora - All Products</title>
+</head>
+<body>
+
+  <header>
+    <div>
+      <a href="#">Logo</a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </nav>
+      <form>
+        <input type="search" placeholder="Search products" aria-label="Search products">
+      </form>
+      <button type="button">Cart 0</button>
+    </div>
+  </header>
+
+  <main>
+    <nav aria-label="Breadcrumb">
+      <a href="#">Home</a> / <span>Shop</span>
+    </nav>
+
+    <section>
+      <div>
+        <h1>All products</h1>
+        <span>24 results</span>
+      </div>
+      <div>
+        <label for="sort-select" hidden>Sort</label>
+        <select id="sort-select" name="sort">
+          <option value="default">Sort</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Highest Rated</option>
+        </select>
+      </div>
+    </section>
+
+    <div>
+      <aside>
+        <h2>Filters</h2>
+
+        <fieldset>
+          <legend>Category</legend>
+          <div>
+            <input type="checkbox" id="cat-gadgets" name="category" value="gadgets">
+            <label for="cat-gadgets">Gadgets</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cat-clothes" name="category" value="clothes">
+            <label for="cat-clothes">Clothes</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cat-accessories" name="category" value="accessories">
+            <label for="cat-accessories">Accessories</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <h3>Price</h3>
+          <input type="range" id="price-range" name="price" min="0" max="500" value="500" aria-label="Price range">
+          <div>
+            <span>$0</span>
+            <span>$500</span>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Rating</legend>
+          <div>
+            <input type="checkbox" id="rating-4" name="rating" value="4">
+            <label for="rating-4">4 stars and up</label>
+          </div>
+          <div>
+            <input type="checkbox" id="rating-3" name="rating" value="3">
+            <label for="rating-3">3 stars and up</label>
+          </div>
+        </fieldset>
+
+        <button type="reset">Clear filters</button>
+      </aside>
+
+      <section aria-label="Product listing">
+        <div>
+          <article>
+            <div>Image</div>
+            <h3>Product name</h3>
+            <p>Price</p>
+            <button type="button">Add to cart</button>
+          </article>
+
+          <article>
+            <div>
+              <span>Sale</span>
+              <div>Image</div>
+            </div>
+            <h3>Product name</h3>
+            <p>Price</p>
+            <button type="button">Add to cart</button>
+          </article>
+
+          <article>
+            <div>Image</div>
+            <h3>Product name</h3>
+            <p>Price</p>
+            <button type="button">Add to cart</button>
+          </article>
+
+          <article>
+            <div>Image</div>
+            <h3>Product name</h3>
+            <p>Price</p>
+            <button type="button">Add to cart</button>
+          </article>
+
+          <article>
+            <div>Image</div>
+            <h3>Product name</h3>
+            <p>Price</p>
+            <button type="button">Add to cart</button>
+          </article>
+
+          <article>
+            <div>Image</div>
+            <h3>Product name</h3>
+            <p>Price</p>
+            <button type="button">Add to cart</button>
+          </article>
+        </div>
+
+        <nav aria-label="Pagination">
+          <button type="button" aria-label="Previous page">&lsaquo;</button>
+          <button type="button" aria-current="page">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button" aria-label="Next page">&rsaquo;</button>
+        </nav>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Footer: links, contact, socials</p>
+  </footer>
+
+</body>
+</html>
